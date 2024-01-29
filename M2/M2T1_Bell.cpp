@@ -7,6 +7,7 @@ Schefeyon Bell
 
 #include <iostream>
 #include <string> 
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -20,12 +21,17 @@ int main()
     double tax_amount = 0;
     double total = 0;
 
-    // do calculations 
+    // do calculations
+    tax_amount = meal_price * tax_percent;
+    total = meal_price + tax_amount; 
 
     // print the receipt 
-    // TODO: make it line up, and fix decimals 
+    // Print this once to set the decimals ot exactly 2
+    cout << fixed << setprecision(2);
+   
     cout << meal    << "\t$" << meal_price << endl; 
     cout << "tax"   << "\t\t$" << tax_amount << endl;
+    cout << "----------------------" << endl;
     cout << "total" << "\t\t$" << total << endl;
     
     return 0; 
