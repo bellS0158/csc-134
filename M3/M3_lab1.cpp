@@ -1,7 +1,8 @@
 // if statement example2
 // standard header
 
-
+// CSC 134
+// Schefeyon Bell 
 // compiler directives
 // (required for the program to run)
 #include <iostream>
